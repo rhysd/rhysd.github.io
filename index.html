@@ -1,55 +1,204 @@
 <!DOCTYPE HTML>
+<!--
+  Prologue by HTML5 UP
+  html5up.net | @n33co
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
   <head>
-    <title>About Linda_pp (rhysd)</title>
+    <title>Prologue by HTML5 UP</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
   </head>
-  <body class="is-loading">
+  <body>
 
-    <!-- Wrapper -->
-      <div id="wrapper">
+    <!-- Header -->
+      <div id="header">
 
-        <!-- Main -->
-          <section id="main">
-            <header>
-              <a href="https://500px.com/photo/69989755/untitled-by-rhysd-"><span class="avatar"><img src="images/avatar.jpg" alt="avatar" /></span></a>
-              <h1>Linda_pp</h1>
-              <p>I love dogs and creating software.</p>
-            </header>
-            <footer>
-              <ul class="icons">
-                <li><a href="https://twitter.com/Linda_pp" title="twitter" class="fa-twitter">Twitter</a></li>
-                <li><a href="https://github.com/rhysd" title="github" class="fa-github">GitHub</a></li>
-                <li><a href="http://rhysd.hatenablog.com/" title="blog" class="fa-pencil">Blog</a></li>
-                <li><a href="https://500px.com/linda_pp" title="500px" class="fa-500px">500px</a></li>
+        <div class="top">
+
+          <!-- Logo -->
+            <div id="logo">
+              <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+              <h1 id="title">@rhysd</h1>
+              <p>Software Engineer</p>
+            </div>
+
+          <!-- Nav -->
+            <nav id="nav">
+              <!--
+
+                Prologue's nav expects links in one of two formats:
+
+                1. Hash link (scrolls to a different section within the page)
+
+                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+                2. Standard link (sends the user to another page/site)
+
+                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+              -->
+              <ul>
+                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                <li><a href="#language" id="language-link" class="skel-layers-ignoreHref"><span class="icon fa-terminal">Languages</span></a></li>
+                <li><a href="#desktop-app" id="desktop-app-link" class="skel-layers-ignoreHref"><span class="icon fa-desktop">Desktop Apps</span></a></li>
+                <li><a href="#vim-plugin" id="vim-plugin-link" class="skel-layers-ignoreHref"><span class="icon fa-edit">Vim Plugins</span></a></li>
               </ul>
-            </footer>
-          </section>
+            </nav>
 
-        <!-- Footer -->
-          <footer id="footer">
-            <ul class="copyright">
-              <li>&copy; 2015 rhysd</li>
-              <li>Design: HTML5 UP</li>
+        </div>
+
+        <div class="bottom">
+
+          <!-- Social Icons -->
+            <ul class="icons">
+              <li><a href="https://twitter.com/Linda_pp" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+              <li><a href="https://github.com/rhysd" class="icon fa-github"><span class="label">Github</span></a></li>
+              <li><a href="http://rhysd.hatenablog.com/" class="icon fa-pencil"><span class="label">Blog</span></a></li>
+              <li><a href="https://500px.com/linda_pp" class="icon fa-500px"><span class="label">500px</span></a></li>
+              <li><a href="mailto:lin90162@yahoo.co.jp" class="icon fa-envelope"><span class="label">Email</span></a></li>
             </ul>
-          </footer>
+
+        </div>
+
+      </div>
+
+    <!-- Main -->
+      <div id="main">
+
+        <!-- Intro {{{ -->
+        <section id="top" class="one cover">
+          <section id="intro">
+            <header>
+              <a href="#language" class="scrolly"><span class="avatar"><img src="images/avatar.jpg" alt="avatar" /></span></a>
+              <h2>
+                <a href="#language" class="scrolly">@rhysd</a>
+              </h2>
+              <p>I <span class="fa fa-heart-o"></span> dogs and creating software.</p>
+            </header>
+          </section>
+        </section>
+        <!-- }}} Intro -->
+
+        <!-- Programming Language {{{-->
+          <section id="language" class="two">
+            <div class="container">
+
+              <header>
+                <h2><span class="icon fa-terminal"></span>Programming Language</h2>
+              </header>
+
+              <h3><a href="https://github.com/rhysd/Dachs" target="_blank">Dachs</a></h3>
+
+              <p>Dachs is a general-purpose programming language designed to be enjoyable, statically typed and dog-friendly.  Dachs has light syntax inspired by Ruby and is aware of variables immutablity.  Dachs is developed with C++14, <a href="https://github.com/boostorg" target="_blank">Boost C++ Libraries</a> and <a href="http://llvm.org/" target="_blank">LLVM</a>.  You can see <a href="https://github.com/rhysd/Dachs/tree/master/samples" target="_blank">more samples</a>.  Below is a Fizz Buzz example using some language features of Dachs.</p>
+              <pre>
+<span class="PreProc">import</span> std.numeric
+
+<span class="PreProc">func</span> <span class="Function">step_to</span>(<span class="Type">var</span> first, last, block)
+    <span class="Statement">for</span> first &lt;= last
+        block(first)
+        first += <span class="Number">1</span>
+    <span class="Statement">end</span>
+<span class="PreProc">end</span>
+
+<span class="PreProc">func</span> <span class="Function">fizzbuzz</span>(n, block)
+    <span class="Number">1</span>.step_to n <span class="Statement">do</span> |<span class="Identifier">i</span>|
+        <span class="Identifier">s</span> := <span class="Statement">case</span>
+            <span class="Statement">when</span> i % <span class="Number">15</span> == <span class="Number">0</span> <span class="Statement">then</span> <span class="Special">&quot;</span><span class="String">fizzbuzz</span><span class="Special">&quot;</span>
+            <span class="Statement">when</span> i %  <span class="Number">3</span> == <span class="Number">0</span> <span class="Statement">then</span> <span class="Special">&quot;</span><span class="String">fizz</span><span class="Special">&quot;</span>
+            <span class="Statement">when</span> i %  <span class="Number">5</span> == <span class="Number">0</span> <span class="Statement">then</span> <span class="Special">&quot;</span><span class="String">buzz</span><span class="Special">&quot;</span>
+            <span class="Statement">else</span>                  i.to_string
+            <span class="Statement">end</span>
+        block(s)
+    <span class="Statement">end</span>
+<span class="PreProc">end</span>
+
+<span class="PreProc">func</span> <span class="Function">main</span>
+    fizzbuzz <span class="Number">100</span> <span class="Statement">do</span> |<span class="Identifier">i</span>|
+        println(i)
+    <span class="Statement">end</span>
+<span class="PreProc">end</span>
+            </pre>
+
+          </section>
+        <!-- }}} Programming Language-->
+
+        <!-- Desktop Apps {{{ -->
+          <section id="desktop-app" class="three">
+            <div class="container">
+
+              <header>
+                <h2><span class="icon fa-desktop"></span>Desktop Applications</h2>
+              </header>
+
+              <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+
+              <p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
+              ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
+              laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
+              parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
+              dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
+              ornare iaculis.</p>
+
+            </div>
+          </section>
+        <!-- }}}Desktop Apps -->
+
+        <!-- Vim Plugins {{{ -->
+          <section id="vim-plugin" class="four">
+            <div class="container">
+
+              <header>
+                <h2><span class="icon fa-edit"></span>Vim Plugins</h2>
+              </header>
+
+              <p>Elementum sem parturient nulla quam placerat viverra
+              mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
+              donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
+              orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+
+              <form method="post" action="#">
+                <div class="row">
+                  <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+                  <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+                  <div class="12u$">
+                    <textarea name="message" placeholder="Message"></textarea>
+                  </div>
+                  <div class="12u$">
+                    <input type="submit" value="Send Message" />
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </section>
+          <!-- }}} Vim Plugins -->
+
+      </div>
+
+    <!-- Footer -->
+      <div id="footer">
+
+        <!-- Copyright -->
+          <ul class="copyright">
+            <li>&copy; rhysd All rights reserved.</li><li>Design based on: <a href="http://html5up.net">HTML5 UP</a></li>
+          </ul>
 
       </div>
 
     <!-- Scripts -->
-      <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-      <script>
-        if ('addEventListener' in window) {
-          window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-          document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-        }
-      </script>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/jquery.scrollzer.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
 
   </body>
 </html>
