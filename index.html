@@ -59,11 +59,11 @@
 
           <!-- Social Icons -->
             <ul class="icons">
-              <li><a href="https://twitter.com/Linda_pp" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-              <li><a href="https://github.com/rhysd" class="icon fa-github"><span class="label">Github</span></a></li>
-              <li><a href="http://rhysd.hatenablog.com/" class="icon fa-pencil"><span class="label">Blog</span></a></li>
-              <li><a href="https://500px.com/linda_pp" class="icon fa-500px"><span class="label">500px</span></a></li>
-              <li><a href="mailto:lin90162@yahoo.co.jp" class="icon fa-envelope"><span class="label">Email</span></a></li>
+              <li><a href="https://twitter.com/Linda_pp" target="_blank" class="icon fa-twitter"><span target="_blank" class="label">Twitter</span></a></li>
+              <li><a href="https://github.com/rhysd" target="_blank" class="icon fa-github"><span target="_blank" class="label">Github</span></a></li>
+              <li><a href="http://rhysd.hatenablog.com/" target="_blank" class="icon fa-pencil"><span target="_blank" class="label">Blog</span></a></li>
+              <li><a href="https://500px.com/linda_pp" target="_blank" class="icon fa-500px"><span target="_blank" class="label">500px</span></a></li>
+              <li><a href="mailto:lin90162@yahoo.co.jp" class="icon fa-envelope"><span target="_blank" class="label">Email</span></a></li>
             </ul>
 
         </div>
@@ -128,7 +128,8 @@
 
             <h3><a href="https://github.com/rhysd/Crisp" target="_blank">Crisp</a></h3>
 
-            <p>Crisp is a Lisp dialect besed on <a href="https://github.com/kanaka/mal" target="_blank">Make a Lisp</a> project.  It is ready for self-hosting and a toy box for my dynamic language ideas.  I wrote this with <a href="http://crystal-lang.org/" target="_blank">Crystal language</a>. Crisp = Crystal + Lisp.</p>
+            <p>Crisp is a Lisp dialect besed on <a href="https://github.com/kanaka/mal" target="_blank">Make a Lisp</a> project.  It is ready for self-hosting and a toy box for my dynamic language ideas.  I wrote this with <a href="http://crystal-lang.org/" target="_blank">Crystal language</a>.<br/>
+            Crisp = Crystal + Lisp.</p>
 
             <pre>
 <span class="Special">(</span><span class="Statement">do</span>
@@ -192,8 +193,14 @@
       <script src="assets/js/jquery.scrollzer.min.js"></script>
       <script src="assets/js/skel.min.js"></script>
       <script src="assets/js/util.js"></script>
+
       <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
       <script src="assets/js/main.js"></script>
-
+      <script>
+        if ('addEventListener' in window) {
+          window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+          document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+        }
+      </script>
   </body>
 </html>
