@@ -24,7 +24,9 @@
           <!-- Logo -->
             <div id="logo">
               <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-              <h1 id="title">@rhysd</h1>
+              <h1 id="title">
+                <a href="#top" class="scrolly">@rhysd</a>
+              </h1>
               <p>Software Engineer</p>
             </div>
 
@@ -77,7 +79,7 @@
             <header>
               <a href="#language" class="scrolly"><span class="avatar"><img src="images/avatar.jpg" alt="avatar" /></span></a>
               <h2>
-                <a href="#language" class="scrolly">@rhysd</a>
+                <a href="https://github.com/rhysd" target="_blank">@rhysd</a>
               </h2>
               <p>I <span class="fa fa-heart-o"></span> dogs and creating software.</p>
             </header>
@@ -119,12 +121,20 @@
 <span class="PreProc">end</span>
 
 <span class="PreProc">func</span> <span class="Function">main</span>
-    fizzbuzz <span class="Number">100</span> <span class="Statement">do</span> |<span class="Identifier">i</span>|
-        println(i)
+    fizzbuzz <span class="Number">100</span> <span class="Statement">do</span> |<span class="Identifier">s</span>|
+        println(s)
     <span class="Statement">end</span>
-<span class="PreProc">end</span>
-            </pre>
+<span class="PreProc">end</span></pre>
 
+            <h3><a href="https://github.com/rhysd/Crisp" target="_blank">Crisp</a></h3>
+
+            <p>Crisp is a Lisp dialect besed on <a href="https://github.com/kanaka/mal" target="_blank">Make a Lisp</a> project.  It is ready for self-hosting and a toy box for my dynamic language ideas.  I wrote this with <a href="http://crystal-lang.org/" target="_blank">Crystal language</a>. Crisp = Crystal + Lisp.</p>
+
+            <pre>
+<span class="Special">(</span><span class="Statement">do</span>
+  <span class="Special">(</span>def! product <span class="Special">(</span>fn* <span class="Special">(</span>n<span class="Special">)</span> <span class="Special">(</span><span class="Statement">if</span> <span class="Special">(</span><span class="Statement">=</span> <span class="Number">1</span> n<span class="Special">)</span> <span class="Number">1</span> <span class="Special">(</span><span class="Statement">*</span> n <span class="Special">(</span>product <span class="Special">(</span><span class="Statement">-</span> n <span class="Number">1</span><span class="Special">))))))</span>
+  <span class="Special">(</span>prn <span class="Special">(</span>product <span class="Number">10</span><span class="Special">))</span>
+<span class="Special">)</span></pre>
           </section>
         <!-- }}} Programming Language-->
 
@@ -135,8 +145,6 @@
               <header>
                 <h2><span class="icon fa-desktop"></span>Desktop Applications</h2>
               </header>
-
-              <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 
               <p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
               ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
@@ -161,19 +169,6 @@
               mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
               donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
               orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-              <form method="post" action="#">
-                <div class="row">
-                  <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-                  <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
-                  <div class="12u$">
-                    <textarea name="message" placeholder="Message"></textarea>
-                  </div>
-                  <div class="12u$">
-                    <input type="submit" value="Send Message" />
-                  </div>
-                </div>
-              </form>
 
             </div>
           </section>

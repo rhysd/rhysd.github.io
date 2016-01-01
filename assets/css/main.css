@@ -2220,6 +2220,9 @@
         padding: 5em 0;
       }
 
+      #main h3 {
+        padding-top: 1em;
+      }
   }
 
 /* Narrow */
@@ -2286,7 +2289,6 @@
       #main {
         margin-left: 20%;
       }
-
   }
 
 /* Narrower */
@@ -2476,7 +2478,6 @@
         #main section.cover {
           padding: 4em 0;
         }
-
   }
 
 /* Mobile */
@@ -2519,7 +2520,6 @@
         #main section.cover header {
           padding: 0 1em;
         }
-
     /* Footer */
 
       #footer .copyright li {
@@ -2591,6 +2591,11 @@
 
       #intro p {
         margin-top: 0.5em;
+      }
+
+      #intro .icon {
+        margin-left: 0.3em;
+        margin-right: 0.3em;
       }
 
     @media screen and (max-width: 480px) {
