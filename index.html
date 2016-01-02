@@ -1,55 +1,285 @@
 <!DOCTYPE HTML>
+<!--
+  Prologue by HTML5 UP
+  html5up.net | @n33co
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
   <head>
-    <title>About Linda_pp (rhysd)</title>
+    <title>Prologue by HTML5 UP</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
   </head>
-  <body class="is-loading">
+  <body>
 
-    <!-- Wrapper -->
-      <div id="wrapper">
+    <!-- Header {{{ -->
+      <div id="header">
 
-        <!-- Main -->
-          <section id="main">
-            <header>
-              <a href="https://500px.com/photo/69989755/untitled-by-rhysd-"><span class="avatar"><img src="images/avatar.jpg" alt="avatar" /></span></a>
-              <h1>Linda_pp</h1>
-              <p>I love dogs and creating software.</p>
-            </header>
-            <footer>
-              <ul class="icons">
-                <li><a href="https://twitter.com/Linda_pp" title="twitter" class="fa-twitter">Twitter</a></li>
-                <li><a href="https://github.com/rhysd" title="github" class="fa-github">GitHub</a></li>
-                <li><a href="http://rhysd.hatenablog.com/" title="blog" class="fa-pencil">Blog</a></li>
-                <li><a href="https://500px.com/linda_pp" title="500px" class="fa-500px">500px</a></li>
+        <div class="top">
+
+          <!-- Logo -->
+            <div id="logo">
+              <span class="image avatar48"><img src="images/avatar.jpg" alt="avatar" /></span>
+              <h1 id="title">
+                <a href="#top" class="scrolly">@rhysd</a>
+              </h1>
+              <p>Software Engineer</p>
+            </div>
+
+          <!-- Nav -->
+            <nav id="nav">
+              <!--
+
+                Prologue's nav expects links in one of two formats:
+
+                1. Hash link (scrolls to a different section within the page)
+
+                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+                2. Standard link (sends the user to another page/site)
+
+                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+              -->
+              <ul>
+                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">About Me</span></a></li>
+                <li><a href="#language" id="language-link" class="skel-layers-ignoreHref"><span class="icon fa-terminal">Languages</span></a></li>
+                <li><a href="#desktop-app" id="desktop-app-link" class="skel-layers-ignoreHref"><span class="icon fa-desktop">Desktop Apps</span></a></li>
+                <li><a href="#vim-plugin" id="vim-plugin-link" class="skel-layers-ignoreHref"><span class="icon fa-edit">Vim Plugins</span></a></li>
               </ul>
-            </footer>
-          </section>
+            </nav>
 
-        <!-- Footer -->
-          <footer id="footer">
-            <ul class="copyright">
-              <li>&copy; 2015 rhysd</li>
-              <li>Design: HTML5 UP</li>
+        </div>
+
+        <div class="bottom">
+
+          <!-- Social Icons -->
+            <ul class="icons">
+              <li><a href="https://twitter.com/Linda_pp" target="_blank" class="icon fa-twitter"><span target="_blank" class="label">Twitter</span></a></li>
+              <li><a href="https://github.com/rhysd" target="_blank" class="icon fa-github"><span target="_blank" class="label">Github</span></a></li>
+              <li><a href="http://rhysd.hatenablog.com/" target="_blank" class="icon fa-pencil"><span target="_blank" class="label">Blog</span></a></li>
+              <li><a href="https://500px.com/linda_pp" target="_blank" class="icon fa-500px"><span target="_blank" class="label">500px</span></a></li>
+              <li><a href="mailto:lin90162@yahoo.co.jp" class="icon fa-envelope"><span target="_blank" class="label">Email</span></a></li>
             </ul>
-          </footer>
+
+        </div>
+
+      </div>
+    <!-- }}} Header -->
+
+    <!-- Main -->
+      <div id="main">
+
+        <!-- Intro {{{ -->
+        <section id="top" class="one cover">
+          <section id="intro">
+            <header>
+              <a href="#language" class="scrolly"><span class="avatar"><img src="images/avatar.jpg" alt="avatar" /></span></a>
+              <h2>
+                <a href="https://github.com/rhysd" target="_blank">@rhysd</a>
+              </h2>
+              <p>I <span class="fa fa-heart-o"></span> dogs and creating softwares which make coding more fun.</p>
+            </header>
+          </section>
+        </section>
+        <!-- }}} Intro -->
+
+        <!-- Programming Language {{{-->
+          <section id="language" class="two">
+            <div class="container">
+
+              <header>
+                <h2><span class="icon fa-terminal"></span>Programming Language</h2>
+              </header>
+
+              <p>I enjoy thinking about programming every day.  Creating programming language provides a chance to think it in terms of programming language implementation.</p>
+
+              <h3><a href="https://github.com/rhysd/Dachs" target="_blank">Dachs</a></h3>
+
+              <p>Dachs is a general-purpose programming language designed to be enjoyable, statically typed and dog-friendly.  Dachs has light syntax inspired by Ruby and is aware of variables immutablity.  Dachs is developed with C++14, <a href="https://github.com/boostorg" target="_blank">Boost C++ Libraries</a> and <a href="http://llvm.org/" target="_blank">LLVM</a>.  You can see <a href="https://github.com/rhysd/Dachs/tree/master/samples" target="_blank">more samples</a>.  Below is a Fizz Buzz example using some language features of Dachs.</p>
+              <pre>
+<span class="PreProc">import</span> std.numeric
+
+<span class="PreProc">func</span> <span class="Function">step_to</span>(<span class="Type">var</span> first, last, block)
+    <span class="Statement">for</span> first &lt;= last
+        block(first)
+        first += <span class="Number">1</span>
+    <span class="Statement">end</span>
+<span class="PreProc">end</span>
+
+<span class="PreProc">func</span> <span class="Function">fizzbuzz</span>(n, block)
+    <span class="Number">1</span>.step_to n <span class="Statement">do</span> |<span class="Identifier">i</span>|
+        <span class="Identifier">s</span> := <span class="Statement">case</span>
+            <span class="Statement">when</span> i % <span class="Number">15</span> == <span class="Number">0</span> <span class="Statement">then</span> <span class="Special">&quot;</span><span class="String">fizzbuzz</span><span class="Special">&quot;</span>
+            <span class="Statement">when</span> i %  <span class="Number">3</span> == <span class="Number">0</span> <span class="Statement">then</span> <span class="Special">&quot;</span><span class="String">fizz</span><span class="Special">&quot;</span>
+            <span class="Statement">when</span> i %  <span class="Number">5</span> == <span class="Number">0</span> <span class="Statement">then</span> <span class="Special">&quot;</span><span class="String">buzz</span><span class="Special">&quot;</span>
+            <span class="Statement">else</span>                  i.to_string
+            <span class="Statement">end</span>
+        block(s)
+    <span class="Statement">end</span>
+<span class="PreProc">end</span>
+
+<span class="PreProc">func</span> <span class="Function">main</span>
+    fizzbuzz <span class="Number">100</span> <span class="Statement">do</span> |<span class="Identifier">s</span>|
+        println(s)
+    <span class="Statement">end</span>
+<span class="PreProc">end</span></pre>
+
+            <h3><a href="https://github.com/rhysd/Crisp" target="_blank">Crisp</a></h3>
+
+            <p>Crisp is a Lisp dialect besed on <a href="https://github.com/kanaka/mal" target="_blank">Make a Lisp</a> project.  It is ready for self-hosting and a toy box for my dynamic language ideas.  I wrote this with <a href="http://crystal-lang.org/" target="_blank">Crystal language</a>.<br/>
+            Crisp = Crystal + Lisp.</p>
+
+            <pre>
+<span class="Special">(</span><span class="Statement">do</span>
+  <span class="Special">(</span>def! product <span class="Special">(</span>fn* <span class="Special">(</span>n<span class="Special">)</span> <span class="Special">(</span><span class="Statement">if</span> <span class="Special">(</span><span class="Statement">=</span> <span class="Number">1</span> n<span class="Special">)</span> <span class="Number">1</span> <span class="Special">(</span><span class="Statement">*</span> n <span class="Special">(</span>product <span class="Special">(</span><span class="Statement">-</span> n <span class="Number">1</span><span class="Special">))))))</span>
+  <span class="Special">(</span>prn <span class="Special">(</span>product <span class="Number">10</span><span class="Special">))</span>
+<span class="Special">)</span></pre>
+          </section>
+        <!-- }}} Programming Language-->
+
+        <!-- Desktop Apps {{{ -->
+          <section id="desktop-app" class="three">
+            <div class="container">
+
+              <header>
+                <h2><span class="icon fa-desktop"></span>Desktop Applications</h2>
+              </header>
+
+              <p>I'm creating some desktop applications with <a href="http://electron.atom.io/" target="_blank">Electron</a> to improve my daily development</p>
+
+              <h3><a href="https://github.com/rhysd/NyaoVim" target="_blank"><span class="image"><img src="https://raw.githubusercontent.com/rhysd/NyaoVim/master/resources/title-bar.png" alt="NyaoVim" /></span></a></h3>
+
+              <p><a href="https://neovim.io/" target="_blank">Neovim</a> Frontend built on <a href="http://electron.atom.io/" target="_blank">Electron</a>, <a href="https://www.polymer-project.org" target="_blank">Polymer</a> and <a href="https://facebook.github.io/flux/">Flux</a>.  Neovim editor is <a href="https://github.com/rhysd/neovim-component" target="_blank">composed as Web Component</a> and users can extend UI by reusable Web Components, HTML, CSS and JavaScript.  This frontend aims providing UI extensibility without loosing Vim's comfortability on editing documents and codes.  NyaoVim provides nice plugin architecture which enables to bundle Web Component HTML file for UI in Vim plugin directory.  It means that Vim plugin managers can also manage UI plugins as other normal plugins.</p>
+              <span class="image"><img src="https://raw.githubusercontent.com/rhysd/ss/master/nyaovim-popup-tooltip/main.gif" alt="NyaoVim screenshot"></img></span>
+              <p>NyaoVim is built on Electron framework hence it works on Linux, OS X and Windows and users can use powerful APIs and web technologies (Node.js, Electron APIs, npm packages, Neovim msgpack-rpc APIs, Web Standards, ...).</p>
+
+              <hr>
+              <h3><a href="https://github.com/rhysd/Shiba" target="_blank"><span class="image"><img src="https://raw.githubusercontent.com/rhysd/Shiba/master/resource/image/doc-shibainu.png" alt="Shiba"/></span></a></h3>
+
+              <p>Shiba is a rich markdown previewer.  Preview is automatically updated and report errors from a linter (e.g. <a href="https://github.com/wooorm/remark-lint" target="_blank">remark-lint</a>). You can preview markdown document which includes emoji, code fence, math equation and <a href="https://github.com/knsv/mermaid" target="_blank">mermaid.js</a> diagrams.</p>
+              <span class="image"><img src="https://raw.githubusercontent.com/rhysd/ss/master/Shiba/window-main.png" alt="Shiba screenshot"/></span>
+              <p>This app aims to work with other text editors nicely.  It provides customizability and keyboard shortcuts.  Shiba is built on <a href="https://www.polymer-project.org" target="_blank">Polymer</a> and <a href="http://electron.atom.io/" target="_blank">Electron</a>, works on Linux, OS X and Windows.</p>
+
+              <hr>
+              <h3><a href="http://rhysd.github.io/Trendy/" target="_blank"><span class="image"><img src="https://raw.githubusercontent.com/rhysd/Trendy/master/resource/image/title.jpg" alt="Trendy"/></span></a></h3>
+
+              <p>Trendy is a <a href="https://github.com/trending" target="_blank">GitHub Trending Repositories</a> watcher & manager.  It watches the trending page and sends you notification when finding new comer repositories.  You can manage the repositories and be in the loop of trend.  This app is also available as isolated-window app.  Trendy works on Linux, OS X and Windows.</p>
+
+              <span class="image"><img src="http://rhysd.github.io/Trendy/resource/image/main.png" alt="Trendy Screenshot"/></span>
+
+              <hr>
+              <h3><a href="https://github.com/rhysd/Tilectron"><span class="image"><img src="https://raw.githubusercontent.com/rhysd/Tilectron/master/resources/doc-title.png" alt="Tilectron"/></span></a></h3>
+
+              <p>Recently our desktop PC gets very wide screen (4K monitar, 5K iMac, ...). However major browsers provides only tabs feature and we can only one web page at once. When we want to see multiple pages at once, we must open them in another window.<br/>
+                So I'm creating (WIP) Tilectron.  It aims to provide flexible and space-effective tiling window management (fallback to mobile page on narrow window), powerful keyboard control features (even moving cursor).  It is created on robust Chromium platform using <a href="http://electron.atom.io/" target="_blank">Electron</a>, <a href="https://facebook.github.io/react/" target="_blank">React.js</a> and <a href="http://redux.js.org/" target="_blank">Redux</a>.
+
+              <span class="image"><img src="https://raw.githubusercontent.com/rhysd/ss/master/Tilectron/static.png" alt="Tilectron screenshot"/></span>
+
+              <h3><a href="https://github.com/rhysd" target="_blank">... And More</a></h3>
+            </div>
+          </section>
+        <!-- }}}Desktop Apps -->
+
+        <!-- Vim Plugins {{{ -->
+          <section id="vim-plugin" class="four">
+            <div class="container">
+
+              <header>
+                <h2><span class="icon fa-edit"></span>Vim Plugins</h2>
+              </header>
+
+              <p>I love <a href="http://www.vim.org/" target="_blank">Vim text editor</a> to write codes and documents.  So I'm writing some Vim plugins</p>
+
+              <h3><a href="https://github.com/rhysd/clever-f.vim">clever-f.vim</a></h3>
+
+              <p>clever-f.vim extends <a href="http://vimdoc.sourceforge.net/htmldoc/motion.html#f" target="_blank">f, F, t and T mappings</a> for more convenience. Instead of ;, f is available to repeat after you type f{char} or F{char}. F after f{char} and F{char} is also available to undo a jump. t{char} and T{char} are ditto. This extension makes a repeat easier and makes you forget the existence of ;. You can use ; for other key mapping.<br/>
+              In addition, this extension provides many convenient features like target character highlighting, smart case matching and so on. If you want to reset the searching character without moving cursor, map <Plug>(clever-f-reset) to your favorite key. At last, you can customize the behavior of the mappings and features.<br/>
+              You can try it <a href="http://rhysd.github.io/clever-f.vim/" target="_blank">ONLINE</a> using <a href="https://github.com/coolwanglu/vim.js/" target="_blank">vim.js</a>.</p>
+
+              <span class="image"><img src="https://raw.githubusercontent.com/rhysd/screenshots/master/clever-f.vim/cleverf_1.gif" alt="clever-f.vim screenshot"/></span>
+
+              <pre>
+input:       fh         f         f      e         fo         f
+move :  _---------->_------>_---------->_->_---------------->_->_
+input:                            F                            F
+move :                        _<-----------------------------_<-_
+text :  hoge        huga    hoo         hugu                ponyo</pre>
+
+              <h3><a href="https://github.com/rhysd/vim-clang-format" target="_blank">vim-clang-format</a></h3>
+
+              <p>vim-clang-format formats C, C++, Objective-C codes using <a href="http://clang.llvm.org/docs/ClangFormat.html" target="_blank">clang-format</a>.  I think that it is good way to determine code style in team and format codes by formatter automatically in order to avoid bikeshedding.<br/>
+              vim-clang-format provides automatic formatting and useful operator mappings to format codes.</p>
+
+              <h3><a href="https://github.com/rhysd/committia.vim" target="_blank">committia.vim</a></h3>
+
+              <p>When you type git commit, Vim starts and opens a commit buffer. committia.vim improves the commit buffer to provide more pleasant editing on commit message.</p>
+
+              <span class="image"><img src="https://raw.githubusercontent.com/rhysd/ss/master/committia.vim/main.jpg" alt="committia.vim screenshot"/></span>
+
+              <p>committia.vim splits the buffer into 3 windows; edit window, status window and diff window. You no longer need to repeat scroll and back to the former position in order to see a long commit diff. If the width of Vim window is too narrow (160 characters by default), committia.vim falls back to single column mode, which has 2 windows; edit window and diff window.</p>
+
+              <h3><a href="https://github.com/rhysd/vim-crystal" target="_blank">vim-crystal</a></h3>
+
+              <p>vim-crystal is a filetype plugin for <a href="http://crystal-lang.org/" target="_blank">Crystal language</a>.  It provides fundamental features to write Crystal code such as syntax highlight, indentation, filetype detection.</br>
+              vim-crystal also provides official tools integration such as crystal-tools, formatter, spec runner and syntax checking.  Please see <a href="https://github.com/rhysd/vim-crystal#readme" target="_blank">screenshots in README</a>.
+              </p>
+
+              <h3><a href="https://github.com/rhysd/committia.vim" target="_blank">github-complete.vim</a></h3>
+
+              <p>github-complete.vim is a completion plugin to complete things related to GitHub. It generates, caches and contextually shows candidates of completion via GitHub API.  You can use them as omni completion in Vim.</p>
+
+              <span class="image"><img src="https://raw.githubusercontent.com/rhysd/screenshots/master/github-complete.vim/issue_completion.gif" alt="issue number completion"/></span>
+              <span class="image"><img src="https://raw.githubusercontent.com/rhysd/ss/master/github-complete.vim/link_completion.gif" alt="link URL completion"/></span>
+              <span class="image"><img src="https://raw.githubusercontent.com/rhysd/screenshots/master/github-complete.vim/emoji_completion.gif" alt="emoji completion"/></span>
+
+              <p>github-complete.vim provides completion for emoji, user name, repository name, issue number and link URL.  You can see screenshots of them in <a href="https://github.com/rhysd/github-complete.vim#readme" target="_blank">README</a>.</p>
+
+              <h3><a href="https://github.com/search?utf8=%E2%9C%93&q=user%3Arhysd+language%3Avim" target="_blank">... And 60+ More Vim Plugins</a></h3>
+            </div>
+          </section>
+          <!-- }}} Vim Plugins -->
 
       </div>
 
+      <!-- Footer {{{-->
+      <div id="footer">
+
+        <ul class="icons">
+          <li><a href="https://twitter.com/Linda_pp" target="_blank" class="icon fa-twitter"><span target="_blank" class="label">Twitter</span></a></li>
+          <li><a href="https://github.com/rhysd" target="_blank" class="icon fa-github"><span target="_blank" class="label">Github</span></a></li>
+          <li><a href="http://rhysd.hatenablog.com/" target="_blank" class="icon fa-pencil"><span target="_blank" class="label">Blog</span></a></li>
+          <li><a href="https://500px.com/linda_pp" target="_blank" class="icon fa-500px"><span target="_blank" class="label">500px</span></a></li>
+          <li><a href="mailto:lin90162@yahoo.co.jp" class="icon fa-envelope"><span target="_blank" class="label">Email</span></a></li>
+        </ul>
+
+        <!-- Copyright -->
+          <ul class="copyright">
+            <li>&copy; rhysd All rights reserved.</li><li>Design based on: <a href="http://html5up.net">HTML5 UP</a></li>
+          </ul>
+
+      </div>
+      <!-- }}} Footer -->
+
     <!-- Scripts -->
-      <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/jquery.scrollzer.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
       <script>
         if ('addEventListener' in window) {
           window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
           document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
         }
       </script>
-
   </body>
 </html>
+

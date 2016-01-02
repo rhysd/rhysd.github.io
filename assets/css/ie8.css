@@ -1,36 +1,52 @@
 /*
-	Identity by HTML5 UP
+	Prologue by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* List */
+/* Section/Article */
 
-	ul.icons li a {
-		-ms-behavior: url("assets/js/PIE.htc");
+	section > .last-child, section.last-child, article > .last-child, article.last-child {
+		margin-bottom: 0;
 	}
 
-		ul.icons li a:before {
-			text-align: center;
-			font-size: 26px;
+/* Form */
+
+	form input[type="text"],
+	form input[type="email"],
+	form input[type="password"],
+	form select,
+	form textarea {
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+/* Button */
+
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	button,
+	.button {
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+/* Header */
+
+	#nav ul li a {
+		color: #888;
+	}
+
+		#nav ul li a.active {
+			background: #1C2022;
 		}
+
+	#headerToggle .toggle {
+		background-color: #888;
+	}
 
 /* Main */
 
-	#main {
-		-ms-behavior: url("assets/js/PIE.htc");
+	#main > section.cover {
+		background-position: auto;
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
 	}
-
-		#main .avatar img {
-			-ms-behavior: url("assets/js/PIE.htc");
-		}
-
-/* Footer */
-
-	#footer {
-		color: #fff;
-	}
-
-		#footer .copyright li {
-			border-left: solid 1px #fff;
-		}
