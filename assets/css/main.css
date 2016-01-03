@@ -2173,8 +2173,15 @@
       }
 
       #main > section .icon {
-        margin-left: 0.3em;
         margin-right: 0.3em;
+      }
+
+      #main h3 {
+        padding-top: 1em;
+      }
+
+      #main .screenshot {
+        margin-bottom: 1em;
       }
 /* Wide */
 
@@ -2218,10 +2225,6 @@
 
       #main section.cover {
         padding: 5em 0;
-      }
-
-      #main h3 {
-        padding-top: 1em;
       }
   }
 
