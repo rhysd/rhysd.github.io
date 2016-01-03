@@ -2545,7 +2545,7 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    min-width: 24em;
+    max-width: 24em;
     padding: 4.5em 3em 3em 3em ;
     background: #ffffff;
     border-radius: 8px;
