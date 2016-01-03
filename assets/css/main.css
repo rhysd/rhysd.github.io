@@ -1556,7 +1556,7 @@
     font-size: 19pt;
     font-weight: 300;
     line-height: 1.75em;
-    color: #888;
+    color: #666;
   }
 
     body.is-loading * {
@@ -1575,12 +1575,12 @@
     font-size: 19pt;
     font-weight: 300;
     line-height: 1.75em;
-    color: #888;
+    color: #666;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
-    color: #666;
+    color: #444;
     line-height: 1.5em;
   }
 
@@ -1599,11 +1599,11 @@
   }
 
     h2.alt {
-      color: #888;
+      color: #666;
     }
 
       h2.alt strong {
-        color: #666;
+        color: #444;
       }
 
   h3 {
@@ -1624,7 +1624,7 @@
 
   strong, b {
     font-weight: 300;
-    color: #666;
+    color: #444;
   }
 
   em, i {
