@@ -1733,6 +1733,12 @@
       margin: 0 2em 2em 0;
     }
 
+    .image.app-icon {
+      margin: 1em 1em 1em 0;
+      width: 10em;
+      flex: none;
+    }
+
     .image.centered {
       display: block;
       margin: 0 0 2em 0;
@@ -1742,6 +1748,10 @@
         margin: 0 auto;
         width: auto;
       }
+
+  .with-app-icon {
+    display: flex;
+  }
 
 /* List */
 
@@ -2503,6 +2513,11 @@
         padding: 0 15px 0 15px;
       }
 
+      .with-app-icon {
+        flex-direction: column;
+        align-items: center;
+      }
+
     /* List */
 
       ul.icons a {
@@ -2536,7 +2551,6 @@
         #footer .copyright li:first-child {
           margin-top: 0;
         }
-
   }
 
 /* Main */
