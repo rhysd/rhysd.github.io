@@ -1,1 +1,4 @@
 /.bundle
+*.pyc
+__pycache__
+.cache
