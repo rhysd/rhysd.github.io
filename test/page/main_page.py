@@ -5,6 +5,8 @@ from selenium.webdriver.support import expected_conditions
 from page.top import Top
 from page.languages import Languages
 from page.base import PageBase
+from page.desktop_apps import DesktopApps
+from page.vim_plugins import VimPlugins
 
 
 class MainPage(PageBase):
@@ -35,6 +37,16 @@ class MainPage(PageBase):
         self.driver.find_element_by_id('language-link').click()
         sleep(3)
         return Languages(self.driver)
+
+    def click_desktop_apps_in_nav(self):
+        self.driver.find_element_by_id('desktop-app-link').click()
+        sleep(3)
+        return DesktopApps(self.driver)
+
+    def click_vim_plugins_in_nav(self):
+        self.driver.find_element_by_id('vim-plugin-link').click()
+        sleep(3)
+        return VimPlugins(self.driver)
 
     def active_item_is(self, name):
          item = self.driver.execute_script('return document.getElementById("' + name + '-link")')

@@ -30,3 +30,14 @@ class TestNavigation:
         height = main.click_languages_in_nav().get_section_height()
         assert abs(height - self.get_current_height()) < 3
         assert main.active_item_is('language')
+
+    def test_desktop_app_link(self):
+        main = MainPage(self.driver)
+        assert main.click_desktop_apps_in_nav().get_section_height() == self.get_current_height()
+        assert main.active_item_is('desktop-app')
+
+    def test_vim_plugin_link(self):
+        main = MainPage(self.driver)
+        assert main.click_vim_plugins_in_nav().get_section_height() == self.get_current_height()
+        assert main.active_item_is('vim-plugin')
+
