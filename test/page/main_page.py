@@ -1,13 +1,17 @@
-from top import Top
+from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
+from page.top import Top
+from page.languages import Languages
+from page.base import PageBase
 
 
-class MainPage:
+class MainPage(PageBase):
     """Representing left navigation area"""
 
     def __init__(self, driver):
+        super().__init__(driver, 'main')
         self.driver = driver
 
     def wait_for_main_element(self):
@@ -19,9 +23,20 @@ class MainPage:
 
     def click_my_name_in_nav(self):
         self.driver.find_element_by_css_selector('#title a').click()
-        self.wait_for_main_element()
+        sleep(3)
         return Top(self.driver)
 
     def click_about_me_in_nav(self):
         self.driver.find_element_by_id('top-link').click()
+        sleep(3)
         return Top(self.driver)
+
+    def click_languages_in_nav(self):
+        self.driver.find_element_by_id('language-link').click()
+        sleep(3)
+        return Languages(self.driver)
+
+    def active_item_is(self, name):
+         item = self.driver.execute_script('return document.getElementById("' + name + '-link")')
+         return 'active' in item.get_attribute('class')
+

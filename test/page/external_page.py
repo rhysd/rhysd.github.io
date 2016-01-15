@@ -1,10 +1,12 @@
-from page_helper import InvalidUrl
+from page.page_helper import InvalidUrl
+from page.base import PageBase
 
 
-class ExternalPage:
+class ExternalPage(PageBase):
     """Representing external page"""
 
     def __init__(self, driver):
+        super().__init__(driver, None)
         self.driver = driver
         url = self.driver.current_url
         if url.startswith('http://localhost'):

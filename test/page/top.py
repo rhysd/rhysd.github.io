@@ -1,18 +1,17 @@
-from external_page import ExternalPage
-from page_helper import InvalidUrl
+from page.external_page import ExternalPage
+from page.page_helper import InvalidUrl
+from page.base import PageBase
 
 
-class Top:
+class Top(PageBase):
     """Representing 'About Me' area of main contents"""
 
     def __init__(self, driver):
+        super().__init__(driver, 'top')
         self.driver = driver
         url = self.driver.current_url
-        if url != 'http://localhost:1234/':
-            raise InvalidUrl('http://localhost:1234/', url)
-
-    def current_height(self):
-        return self.driver.execute_script('return document.body.scrollTop')
+        if not url.endswith('/#top'):
+            raise InvalidUrl('http://localhost:1234/#top', url)
 
     def click_my_name(self):
         self.driver.find_element_by_css_selector('header h2 a').click()
