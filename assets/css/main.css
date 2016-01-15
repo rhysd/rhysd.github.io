@@ -1593,11 +1593,6 @@
       color: #333;
     }
 
-    h2 a:hover {
-      color: inherit;
-      cursor: text;
-    }
-
   h2 {
     font-size: 2em;
     letter-spacing: -1px;
@@ -2063,6 +2058,11 @@
       top: 0;
     }
 
+    #logo img,
+    #logo .image {
+      border-radius: 4px;
+    }
+
   #nav ul li a {
     display: block;
     padding: 0.5em 1.5em 0.5em 1.5em;
@@ -2198,6 +2198,13 @@
       #main .screenshot {
         margin-bottom: 1em;
       }
+
+    /* Customize */
+    .section-title:hover {
+      color: inherit;
+      cursor: text;
+    }
+
 /* Wide */
 
   @media screen and (min-width: 961px) {
