@@ -1,4 +1,3 @@
-from time import sleep
 from page.page_helper import InvalidUrl
 from page.base import PageBase
 

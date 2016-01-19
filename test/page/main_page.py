@@ -1,4 +1,3 @@
-from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
@@ -25,27 +24,27 @@ class MainPage(PageBase):
 
     def click_my_name_in_nav(self):
         self.driver.find_element_by_css_selector('#title a').click()
-        sleep(3)
+        self.wait_for_animation()
         return Top(self.driver)
 
     def click_about_me_in_nav(self):
         self.driver.find_element_by_id('top-link').click()
-        sleep(3)
+        self.wait_for_animation()
         return Top(self.driver)
 
     def click_languages_in_nav(self):
         self.driver.find_element_by_id('language-link').click()
-        sleep(3)
+        self.wait_for_animation()
         return Languages(self.driver)
 
     def click_desktop_apps_in_nav(self):
         self.driver.find_element_by_id('desktop-app-link').click()
-        sleep(3)
+        self.wait_for_animation()
         return DesktopApps(self.driver)
 
     def click_vim_plugins_in_nav(self):
         self.driver.find_element_by_id('vim-plugin-link').click()
-        sleep(3)
+        self.wait_for_animation()
         return VimPlugins(self.driver)
 
     def active_item_is(self, name):
